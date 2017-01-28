@@ -91,6 +91,7 @@ int checkLine(Player board[8][8], Player p, Player o, int a, int b, int dirX, in
     int y = b + dirY;
     if(!(onBoard(x) && onBoard(y))) return 0;
     Player curr = board[x][y];
+    if (curr == p) return 0;
     while (curr == o) {
         x += dirX;
         y += dirY;
