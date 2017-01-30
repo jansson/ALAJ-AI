@@ -118,7 +118,7 @@ int main(void) {
     board[4][3] = board[3][4] = Black;
     Player currentP = Black;
     printBoard(board);
-    //useless comment
+    //another useless comment
     char input[2];
     while (1) {
         if (scanf("%s", input) != 1)
