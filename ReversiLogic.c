@@ -69,7 +69,7 @@ int play(Player board[8][8], char *move, Player p) {
 int viableMove(Player board[8][8], Player p, Player o, int a, int b) {
     for (int i = -1; i <= 1; i++) {
         for (int j = -1; j <= 1; j++) {
-            if (checkLine(board, p, o, a, b, i, j)) return 1;
+            if (!(i == 0 && j == 0) && checkLine(board, p, o, a, b, i, j)) return 1;
         }
     }
     return 0;
